@@ -1,25 +1,25 @@
 // ---------------------------------------------------------------------------
 // Fields marked [FILL IN] are placeholders — replace with your real info.
-// Everything else here is drawn from your resume.
+// Everything else here is drawn from your revised resume + Google Scholar list.
 // ---------------------------------------------------------------------------
 
 export const profile = {
   name: "Manoj Lamichhane",
   initials: "ML",
   credentials: "EIT, PE (Civil: Water Resources & Environmental)",
-  title: "Water Resources Engineer, Ph.D.",
-  location: "Colorado, USA",
+  title: "Water Resources Scientist, Ph.D.",
+  location: "Denver, CO",
   badge: "PH.D. · EIT · PE (WATER RESOURCES)",
   bioGreeting: "Hi, I'm Manoj!",
   bio:
     "I'm a Water Resources Engineer working at the intersection of machine learning, climate modeling, and remote sensing. I spent my PhD years applying machine learning and advanced remote sensing to understand and address complex water resources challenges. I'm especially interested in building and deploying ML models and developing scalable workflows through MLOps.",
   email: "Manoj.Lamichhane@jacks.sdstate.edu",
-  phone: "(607) 663-0567", // remove this line from Hero/Contact if you'd rather not publish it
+  phone: "(607) 663-0567",
   scholarUrl: "https://scholar.google.com/citations?user=1a5hblcAAAAJ&hl=en",
   linkedinUrl: "https://www.linkedin.com/in/manoj-lamichhane-ph-d-58455028b",
   githubUrl: "https://github.com/manojlamichhane-ml",
   orcidUrl: "https://orcid.org/0009-0009-5581-6692",
-  cvUrl: "/cv.pdf", // drop your real CV PDF into /public/cv.pdf
+  cvUrl: "/cv.pdf",
 };
 
 export const education = [
@@ -27,7 +27,7 @@ export const education = [
     degree: "Ph.D. in Water Resources Engineering",
     focus: "GPA 4.00/4.00",
     institution: "South Dakota State University, Brookings, SD",
-    period: "Mar 2026",
+    period: "Aug 2026",
   },
   {
     degree: "M.S. in Water Resources Engineering",
@@ -36,7 +36,7 @@ export const education = [
     period: "Sep 2021",
   },
   {
-    degree: "B.S. in Agricultural Engineering",
+    degree: "B.S. in Engineering",
     focus: "GPA 3.77/4.00 (WES Evaluation)",
     institution: "Tribhuvan University, Nepal",
     period: "Sep 2018",
@@ -45,25 +45,32 @@ export const education = [
 
 export const experience = [
   {
+    role: "Water Resources Scientist",
+    organization: "Knight Piésold",
+    period: "May 2026 – Present",
+    description:
+      "Perform dam breach analyses to estimate breach outflow hydrographs and simulate downstream flood wave propagation, inundation extent, flow depths, velocities, and arrival times. Build, run, and troubleshoot 2D and 3D hydraulic models in FLO-2D, RiverFlow2D, and FLOW-3D. Develop Python scripts to automate pre-processing of model inputs and post-processing of outputs into depth, velocity, and hazard rasters. Use QGIS for terrain/DEM processing and production of inundation and hazard maps.",
+  },
+  {
     role: "Graduate Research Assistant",
     organization: "South Dakota State University, Brookings, SD",
-    period: "Aug 2023 – Present",
+    period: "Aug 2023 – Aug 2026",
     description:
-      "Applying distributed and semi-distributed hydrological models to estimate water quantity, water quality, soil moisture, and groundwater recharge, achieving a 27% reduction in error for deep-layer soil moisture prediction. Developing flood inundation maps with HEC-RAS 1D/2D and culvert hydraulic design with HY-8. Supporting proposal development for NASA, USDA, and NSF.",
+      "Developed data-driven models to estimate soil moisture, evapotranspiration, and streamflow using multi-source satellite data. Applied distributed and semi-distributed hydrological models, achieving a 27% reduction in error for deep-layer soil moisture prediction. Automated data processing pipelines in Python and Google Earth Engine for real-time soil moisture prediction. Supported proposal development for NASA, USDA, and NSF.",
   },
   {
     role: "Summer Research Intern, HPC Laboratory",
     organization: "Mississippi State University, Starkville, MS",
     period: "Jun 2025 – Aug 2025",
     description:
-      "Processed large climate, precipitation, and terrain datasets using high-performance computing for watershed-scale hydrologic analysis. Built an interactive ArcGIS Pro decision-support portal for evaluating water availability, flood risk, and land-surface conditions.",
+      "Processed large climate, precipitation, and terrain datasets using high-performance computing for large-scale environmental analysis. Built an interactive ArcGIS Pro decision-support portal for evaluating environmental risk and land-surface conditions.",
   },
   {
     role: "Water Resources Engineer",
     organization: "Sentinel Engineering Consultancy, Kathmandu, Nepal",
     period: "Sep 2018 – Jun 2023",
     description:
-      "Performed hydrologic and hydraulic analyses for 30+ motorable bridges, estimating design floods, HFL, and scour depths. Converted survey data into terrain surfaces and cross-sections in AutoCAD Civil 3D for 1D/2D HEC-RAS modeling. Applied empirical, conceptual, and semi-distributed models to estimate streamflow and sediment yield across catchments of 500–45,000 km².",
+      "Processed and analyzed large-scale terrain, survey, and environmental datasets across 30+ infrastructure projects, generating data products used in engineering design and permitting decisions. Applied GIS-based terrain analysis to convert raw geospatial data into model-ready inputs for infrastructure planning. Prepared technical data summaries and risk assessments for infrastructure and disaster-mitigation planning.",
   },
   {
     role: "Part-time Lecturer",
@@ -76,77 +83,231 @@ export const experience = [
 
 export const skills = [
   {
-    category: "Hydrologic & Hydraulic Modeling",
-    items: ["HEC-RAS", "HEC-HMS", "HY-8", "SWAT / SWAT+", "WEAP", "MODFLOW", "HYDRUS", "SWMM"],
+    category: "Water Resources & Hydraulic Modeling",
+    items: [
+      "Dam breach & flood inundation analysis",
+      "FLO-2D",
+      "RiverFlow2D",
+      "FLOW-3D",
+      "HEC-RAS",
+      "HEC-HMS",
+      "SWAT / SWAT+",
+      "QGIS",
+      "ArcGIS Pro",
+      "ArcGIS Online",
+      "Google Earth Engine",
+      "ENVI",
+      "Pix4D",
+    ],
   },
   {
     category: "Data Science & Machine Learning",
-    items: ["Python", "R", "MATLAB", "FORTRAN", "Scikit-learn", "TensorFlow", "Keras"],
-  },
-  {
-    category: "Geospatial & Remote Sensing",
-    items: ["ArcGIS Pro", "ArcGIS Online", "QGIS", "ENVI", "Google Earth Engine", "Pix4D"],
-  },
-  {
-    category: "High-Performance Computing",
-    items: ["SLURM", "Linux clusters", "Job scripting", "Parallel processing"],
-  },
-  {
-    category: "Design & Engineering",
-    items: ["AutoCAD Civil 3D", "Revit", "Excel (VBA)", "Power BI"],
+    items: [
+      "Python (NumPy, Pandas, Scikit-learn, TensorFlow, Keras)",
+      "R",
+      "MATLAB",
+      "FORTRAN",
+      "Random Forest / SVM / XGBoost / ANN / LSTM",
+      "HPC (Linux clusters, SLURM)",
+      "MLOps (reproducible pipelines, automated batch training)",
+      "Power BI",
+      "Excel (VBA)",
+    ],
   },
 ];
 
 export const projects = [
   {
+    title: "Dam Breach Analysis & Hazard Mapping",
+    summary:
+      "2D/3D hydraulic modeling (FLO-2D, RiverFlow2D, FLOW-3D) of dam breach outflow hydrographs and downstream flood propagation, with Python and QGIS workflows automating model pre- and post-processing into hazard maps and report-ready figures.",
+    tags: ["Hydraulic Modeling", "Dam Safety", "Python", "QGIS"],
+  },
+  {
     title: "Explainable ML for Hydrological Drivers of Yield Variability",
     summary:
-      "Open-source research project applying explainable machine learning to identify the hydrological drivers behind crop yield variability.",
+      "Open-source research project applying explainable machine learning to identify the hydrological drivers behind sub-field dryland wheat yield variability.",
     tags: ["Machine Learning", "Hydrology", "GitHub"],
     link: "https://github.com/manojlamichhane-ml/Explainable-ML-reveals-hydrological-drivers-of-yield-variability",
   },
   {
-    title: "Flood Inundation Mapping & Culvert Hydraulic Design",
+    title: "Data-Driven Soil Moisture, ET & Streamflow Modeling",
     summary:
-      "1D/2D flood inundation mapping in HEC-RAS and culvert hydraulic design in HY-8, evaluating flow capacity, headwater depth, and roadway overtopping.",
-    tags: ["HEC-RAS", "HY-8", "Flood Risk"],
-  },
-  {
-    title: "Bridge Hydraulics & Scour Analysis, Nepal",
-    summary:
-      "Hydrologic and hydraulic analysis for 30+ motorable bridges — design floods, high flood levels, and scour depths — supporting safe bridge design across catchments from 500 to 45,000 km².",
-    tags: ["Bridge Hydraulics", "HEC-RAS", "Consulting"],
+      "PhD research applying machine learning and deep learning to satellite remote sensing and climate data on a USDA-funded project, using Google Earth Engine and HPC clusters for large-scale processing.",
+    tags: ["Remote Sensing", "Machine Learning", "USDA", "HPC"],
   },
   {
     title: "HPC Climate & Terrain Decision-Support Portal",
     summary:
-      "Interactive ArcGIS Pro portal built during a summer research internship, processing large climate, precipitation, and terrain datasets on HPC clusters to support watershed-scale decisions on water availability and flood risk.",
+      "Interactive ArcGIS Pro portal built during a summer research internship, processing large climate, precipitation, and terrain datasets on HPC clusters to support decisions on environmental risk and land-surface conditions.",
     tags: ["HPC", "ArcGIS Pro", "Climate Data"],
   },
 ];
 
+export const publicationsNote =
+  "14 peer-reviewed papers in high-impact Q1 journals and 21 oral/poster presentations at national and international conferences — full record and citation metrics on Google Scholar.";
+
 export const publications = [
   {
     title:
-      "Irrigation demand under climate change in the Mahakali command area",
-    authors: "Lamichhane, M., Mishra, Y., et al.",
-    venue: "Journal of Hydrology: Regional Studies",
-    year: "[FILL IN year]",
-    link: "#",
+      "Explainable machine learning reveals water-related drivers of sub-field dryland wheat yield variability",
+    authors: "Lamichhane, M., Mehan, S., Mankin, K. R., Trooien, T., Maimaitijiang, M., & Rekabdarkolaee, H. M.",
+    venue: "European Journal of Agronomy",
+    year: "2026",
+    link: "https://doi.org/10.1016/j.eja.2026.128296",
   },
   {
-    title: "Dam breach hydraulic model parameter sensitivity: a systematic review",
-    authors: "Lamichhane, M., et al.",
-    venue: "In preparation — targeting a Q1 journal",
-    year: "In progress",
-    link: "#",
+    title:
+      "Daily Actual Evapotranspiration Estimation in Dryland Cropping Systems Using Parsimonious Machine Learning Frameworks",
+    authors: "Lamichhane, M., Mehan, S., & Mankin, K. R.",
+    venue: "Measurement: Digitalization",
+    year: "2026",
+    link: "https://doi.org/10.1016/j.meadig.2026.100044",
+  },
+  {
+    title: "Assessment and forecasting of drought in Nepal using long short-term memory model",
+    authors: "Lamichhane, M., Jha, A. N., Ankon, S. B., Suwal, N., Khatakho, R., & Ansari, A.",
+    venue: "Theoretical and Applied Climatology",
+    year: "2026",
+    link: "https://doi.org/10.1007/s00704-026-06298-5",
+  },
+  {
+    title:
+      "Multi-Layer Root Zone Soil Moisture Estimation Using Field and Remote Sensing Data Fusion with Machine Learning in Semi-Arid Croplands",
+    authors: "Lamichhane, M., Mehan, S., & Mankin, K. R.",
+    venue: "Vadose Zone Journal",
+    year: "2025",
+    link: "https://doi.org/10.1002/vzj2.70047",
+  },
+  {
+    title:
+      "Surface Soil Moisture Prediction Using Multimodal Remote Sensing Data Fusion and Machine Learning Algorithms in Semi-Arid Agricultural Region",
+    authors: "Lamichhane, M., Mehan, S., & Mankin, K. R.",
+    venue: "Science of Remote Sensing",
+    year: "2025",
+    link: "https://doi.org/10.1016/j.srs.2025.100255",
+  },
+  {
+    title:
+      "Soil Moisture Prediction Using Remote Sensing and Machine Learning Algorithms: A Review on Progress, Challenges, and Opportunities",
+    authors: "Lamichhane, M., Mehan, S., & Mankin, K. R.",
+    venue: "Remote Sensing",
+    year: "2025",
+    link: "https://doi.org/10.3390/rs17142397",
+  },
+  {
+    title: "Assessing Hydropower Production Potential with Multisite Hydrological Modeling in the Koshi River Basin, Nepal",
+    authors: "Jha, A., Bhattarai, U., Lamichhane, M., Mehan, S., Bhattarai, P., & Sanyam, G.",
+    venue: "Energy Conversion and Management: X",
+    year: "2025",
+    link: "https://doi.org/10.1016/j.ecmx.2025.101283",
+  },
+  {
+    title:
+      "Predictive, interpretive and optimizable machine learning models for fluidized bed gasifiers to increase hydrogen production and reduce tar yield",
+    authors: "Kafle, S., Lamichhane, M., & Adhikari, S.",
+    venue: "International Journal of Hydrogen Energy",
+    year: "2025",
+    link: "https://doi.org/10.1016/j.ijhydene.2025.152187",
+  },
+  {
+    title:
+      "A Review of Current Trends, Challenges, and Future Perspectives in Machine Learning Applications to Water Resources in Nepal",
+    authors: "Chaulagain, S., Lamichhane, M., & Chaulagain, U.",
+    venue: "Journal of Hazardous Materials Advances",
+    year: "2025",
+    link: "https://doi.org/10.1016/j.hazadv.2025.100678",
+  },
+  {
+    title: "Evaluating different drought products for assessing drought and implications on agriculture in Nepal",
+    authors: "Chaulagain, S., Lamichhane, M., Chaulagain, U., Gyawali, S., Shrestha, S., & Pandey, V. P.",
+    venue: "Results in Engineering",
+    year: "2025",
+    link: "https://doi.org/10.1016/j.rineng.2025.104205",
+  },
+  {
+    title:
+      "Evaluating empirical and machine learning approaches for reference evapotranspiration estimation using limited climatic variables in Nepal",
+    authors: "Shrestha, E., Poudyal, S., Ghimire, A., Maharjan, S., Lamichhane, M., & Mehan, S.",
+    venue: "Results in Engineering",
+    year: "2025",
+    link: "https://doi.org/10.1016/j.rineng.2025.104254",
+  },
+  {
+    title: "Shift in Streamflow Regime in Headwater Catchments: Causes and Impacts",
+    authors: "Mehan, S., Lamichhane, M., & Jha, A.",
+    venue: "Navigating the Nexus: Hydrology, Agriculture, Pollution and Climate Change, Vol. 1 (Springer Nature)",
+    year: "2025",
+    link: "https://link.springer.com/chapter/10.1007/978-3-031-76532-2_1",
+  },
+  {
+    title:
+      "Assessing the impact of climate change on streamflow in the Tamor River Basin, Nepal: an analysis using SWAT and CMIP6 scenarios",
+    authors: "Subedi, S. R., Lamichhane, M., Dhungana, S., Chalise, B., Bhattarai, S., Chaulagain, U., & Khatiwada, R.",
+    venue: "Discover Civil Engineering",
+    year: "2024",
+    link: "https://doi.org/10.1007/s44290-024-00143-2",
+  },
+  {
+    title:
+      "Integrating solar-induced chlorophyll fluorescence with traditional remote sensing and environmental variables for enhanced rice yield prediction in Nepal using machine learning",
+    authors: "Lamichhane, M., Chapagain, A. R., Mehan, S., Kafle, S., & Ames, D. P.",
+    venue: "Remote Sensing Applications: Society and Environment",
+    year: "2024",
+    link: "https://doi.org/10.1016/j.rsase.2024.101371",
+  },
+  {
+    title: "Assessment of Surface Water Availability of Kathmandu Valley Using SWAT Model",
+    authors: "Pokhrel, M., Shakya, N., & Lamichhane, M.",
+    venue: "Asian Journal of Water, Environment and Pollution",
+    year: "2024",
+    link: "https://doi.org/10.3233/AJW240041",
+  },
+  {
+    title:
+      "Assessing Climate Change Impacts on Streamflow and Baseflow in the Karnali River Basin, Nepal: A CMIP6 Multi-Model Ensemble Approach Using SWAT and Web-Based Hydrograph Analysis Tool",
+    authors: "Lamichhane, M., Phuyal, S., Mahato, R., Shrestha, A., Pudasaini, U., Lama, S. D., Chapagain, A. R., Mehan, S., & Neupane, D.",
+    venue: "Sustainability",
+    year: "2024",
+    link: "https://doi.org/10.3390/su16083262",
+  },
+  {
+    title: "Assessment of Future Water Availability and Irrigation Water Demand Under Climate Change in the Kankai River Basin, Nepal",
+    authors: "Lamichhane, M., Mishra, Y., & Bhattarai, P.",
+    venue: "Journal of Earth Science & Climatic Change",
+    year: "2022",
+    link: "https://doi.org/10.4172/2157-7617.1000639",
+  },
+  {
+    title: "Impact of climate change on crop water requirement of Kamala irrigation system, Nepal",
+    authors: "Dawadi, S., Mishra, Y., Lamichhane, M., & Tamrakar, J.",
+    venue: "Advances in Engineering and Technology: An International Journal",
+    year: "2022",
+    link: "https://doi.org/10.3126/aet.v2i01.50440",
+  },
+  {
+    title:
+      "Out-performing bias-corrected GCM models and CMIP-6 based precipitation and temperature projections for the Bagmati irrigation area",
+    authors: "Raila, N. S., Acharya, R., Ghimire, S., Adhikari, S., Khanal, S., Mishra, Y., & Lamichhane, M.",
+    venue: "Journal of Advanced College of Engineering and Management",
+    year: "2022",
+    link: "https://doi.org/10.3126/jacem.v7i01.47342",
+  },
+  {
+    title: "Comparison of available river flow and irrigation water demand of Kankai irrigation system",
+    authors: "Lamichhane, M., Mishra, Y., & Bhattarai, P.",
+    venue: "IOE Graduate Conference",
+    year: "2021",
+    link: "http://conference.ioe.edu.np/ioegc10/papers/ioegc-10-053-10073.pdf",
   },
 ];
 
-export const publicationsNote =
-  "12 peer-reviewed papers published in Q1 journals and 17 oral/poster presentations at national and international conferences — full record on Google Scholar.";
-
 export const awards = [
+  {
+    title: "Outstanding Oral Presentation",
+    issuer: "2025 ASABE North Central Intersectional Conference, MN",
+    year: "2026",
+  },
   {
     title: "ABE Graduate Scholarship Winner",
     issuer: "South Dakota State University",
@@ -154,7 +315,7 @@ export const awards = [
   },
   {
     title: "Outstanding Oral Presentation",
-    issuer: "ASABE North Central Intersectional Conference",
+    issuer: "2025 ASABE North Central Intersectional Conference, SD",
     year: "2025",
   },
   {
@@ -177,11 +338,6 @@ export const awards = [
     issuer: "ASABE North Central Regional Section Meeting, SD",
     year: "2024",
   },
-  {
-    title: "Hutta Ram Baidya Scholarship",
-    issuer: "Nepalese Society of Agricultural Engineers, Kathmandu",
-    year: "2018",
-  },
 ];
 
 export const certificates = [
@@ -196,19 +352,18 @@ export const service = [
     year: "2024 – Present",
   },
   {
-    title: "Trainer, NSF I-GUIDE 2024 Workshop",
+    title: "Trainer, NSF I-GUIDE 2024 Workshop, Boulder, CO",
     detail: "One-week training on GeoAI applications to predict field-scale actual evapotranspiration.",
     year: "2024",
   },
   {
     title: "Student Panelist, 2025 Great Plains Water Conference",
-    detail: "Discussed how state Water Resources Research Institutes prepare graduate students for industry and academia.",
+    detail: "Discussed how Water Resources Research Institutes prepare graduate students for industry and academia.",
     year: "2025",
   },
 ];
 
 export const memberships = [
   "American Geophysical Union (AGU), 2024 – Present",
-  "American Society of Agricultural and Biological Engineers, 2023 – Present",
   "Committee Member, American Society of Nepalese Engineers, 2024 – Present",
 ];
